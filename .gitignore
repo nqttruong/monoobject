@@ -1,0 +1,79 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+.venv/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints
+
+# =========================
+# VSCode / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Model Weights (IMPORTANT)
+# =========================
+*.pt
+*.pth
+*.onnx
+*.engine
+weights/
+checkpoints/
+
+# =========================
+# Dataset (RẤT QUAN TRỌNG)
+# =========================
+data/
+datasets/
+kitti_raw/
+kitti_object/
+*.zip
+*.tar
+*.tar.gz
+
+# =========================
+# Output Results
+# =========================
+runs/
+outputs/
+results/
+predictions/
+*.mp4
+*.avi
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Cache
+# =========================
+.cache/
