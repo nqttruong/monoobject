@@ -1,39 +1,4 @@
-             ┌───────────────┐
-             │  Video Frame  │
-             └──────┬────────┘
-                    │
-        ┌───────────┴───────────┐
-        │                       │
-   ┌────▼────┐              ┌───▼─────┐
-   │  YOLO   │              │ MiDaS   │
-   │ Detect  │              │ Depth   │
-   └────┬────┘              └───┬─────┘
-        │                       │
-        │                   Relative Depth
-        │                       │
-        │                Scale Calibration
-        │                       │
-        │                 Backprojection (2D -> 3D)
-        │                       │
-        │                 3D Point Cloud
-        │                       │
-        │                RANSAC Plane Fit
-        │                       │
-        │              Plane Stabilization
-        │                       │
-        └──────────────┬────────┘
-                       │
-               Ray Construction
-                       │
-             Ray-Plane Intersection
-                       │
-                 Object Distance
-                       │
-                MAE / RMSE Eval
-
-
-
-                Video Frame
+                Video Frame/ Image
                     ↓
                 ObjectDetector (YOLOv8)
                     ↓
